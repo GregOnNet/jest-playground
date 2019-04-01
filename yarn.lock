@@ -81,7 +81,7 @@
     "@angular-devkit/core" "7.3.7"
     rxjs "6.3.3"
 
-"@angular-devkit/core@7.3.7":
+"@angular-devkit/core@7.3.7", "@angular-devkit/core@^7.3.4":
   version "7.3.7"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-7.3.7.tgz#9b93e8b88bc776c6b08895799123d718a20e3b41"
   integrity sha512-RRDCqSX4wF3Nxxls+W0BzCHz2HYWFP6bUpWxmzXF8EETGlZq/b/ZsEnVV41jtsqC4PCTks4k0qUFMaKE7XCupg==
@@ -92,7 +92,7 @@
     rxjs "6.3.3"
     source-map "0.7.3"
 
-"@angular-devkit/schematics@7.3.7":
+"@angular-devkit/schematics@7.3.7", "@angular-devkit/schematics@^7.3.4":
   version "7.3.7"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-7.3.7.tgz#268465d355aa03d16189d0ea89467703dae4d581"
   integrity sha512-XHrr63E6p9kLNR83D4AcUkdBFLw4yxeQihual3I88eJUPJdHAvQYkp1sBThlMkNmBWPVagUD4efknkUFfRkFmg==
@@ -284,6 +284,14 @@
     esutils "^2.0.2"
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
+
+"@co-it/schematics@^1.0.1-alpha.8":
+  version "1.0.1-alpha.8"
+  resolved "https://registry.yarnpkg.com/@co-it/schematics/-/schematics-1.0.1-alpha.8.tgz#403596fe8fab3033792fa6eb89f9cf51f4054dc0"
+  integrity sha512-u83M7NTwwJZRmPRdbov/gdqPES3vC2wecwrA8hYpQA9FVwglrKfojmC2JKjpMnlVCXqUURYUXka9/hoc4qXUtA==
+  dependencies:
+    "@angular-devkit/core" "^7.3.4"
+    "@angular-devkit/schematics" "^7.3.4"
 
 "@ngtools/webpack@7.3.7":
   version "7.3.7"
