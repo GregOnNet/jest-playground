@@ -1,6 +1,7 @@
 {
   "hooks": {
     "pre-commit": "pretty-quick --staged && lint-staged",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "pre-push": "jest"
   }
 }
