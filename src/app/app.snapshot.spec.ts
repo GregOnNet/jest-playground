@@ -7,9 +7,10 @@ describe('<app-root>', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent]
-    }).compileComponents();
+    });
 
     sut = TestBed.createComponent(AppComponent);
+    sut.detectChanges();
   });
 
   describe('When the application stats', () => {

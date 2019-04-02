@@ -5,7 +5,7 @@ exports[`<app-root> When the application stats displays the welcome message 1`] 
   title={[Function String]}
 >
   <h1>
-    
+    Jest Playground!
   </h1><p>
      Welcome to the playground, you will find all testing samples in 
     <code>
