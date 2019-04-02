@@ -8,4 +8,19 @@ describe('jest.fn', () => {
       expect(mock).toBeCalledWith(1);
     });
   });
+
+  describe('When you need to build more complex mocks', () => {
+    it('you should use multiple jest.fns', () => {
+      const nestedMock = {
+        count: jest.fn(),
+        greet: jest.fn()
+      };
+
+      nestedMock.greet('Hey 🚀!');
+
+      expect(nestedMock.greet).toHaveBeenCalledWith(
+        expect.stringContaining('🚀')
+      );
+    });
+  });
 });
