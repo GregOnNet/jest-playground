@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<app-root> When the application stats displays the welcome message 1`] = `
+exports[`<app-root> When the application starts displays the welcome message 1`] = `
+<p>
+   Welcome to the playground, you will find all testing samples in 
+  <code>
+    *.spec.ts
+  </code>
+   files.
+
+</p>
+`;
+
+exports[`<app-root> When the application starts renders the whole component 1`] = `
 <app-root
   title={[Function String]}
 >
