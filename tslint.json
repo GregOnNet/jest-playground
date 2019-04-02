@@ -4,7 +4,6 @@
   "rules": {
     "member-access": false,
     "arrow-parens": false,
-    "max-line-length": [true, 80],
     "trailing-comma": [
       true,
       {
