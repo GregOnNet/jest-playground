@@ -3,7 +3,6 @@
   "rulesDirectory": ["codelyzer"],
   "rules": {
     "member-access": false,
-    "quotemark": [true, "single"],
     "arrow-parens": false,
     "max-line-length": [true, 80],
     "trailing-comma": [
