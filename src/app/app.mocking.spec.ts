@@ -23,4 +23,21 @@ describe('jest.fn', () => {
       );
     });
   });
+
+  describe('When you need to emulate a certain behaviour', () => {
+    it('you should give mockImplmentation a try', () => {
+      const getMock = jest
+        .fn()
+        .mockImplementation((apiUrl: string) =>
+          Promise.resolve(`${apiUrl}: success`)
+        );
+
+      const url = 'http://localhost:4200';
+      const http = { get: getMock };
+
+      return http.get(url).then((response: string) => {
+        expect(response).toBe(`${url}: success`);
+      });
+    });
+  });
 });
