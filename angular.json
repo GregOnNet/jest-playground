@@ -72,8 +72,10 @@
           }
         },
         "test": {
-          "builder": "@angular-builders/jest-run",
-          "options": {}
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "configPath": "src/jest.config.js"
+          }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",

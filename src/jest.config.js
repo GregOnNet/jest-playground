@@ -1,8 +1,11 @@
 // https://github.com/thymikee/jest-preset-angular#brief-explanation-of-config
 module.exports = {
-  preset: 'jest-preset-angular',
   roots: ['src'],
-  setupFilesAfterEnv: ['<rootDir>/src/setup-jest.ts'],
+  globals: {
+    'ts-jest': {
+      tsConfig: 'src/tsconfig.spec.json'
+    }
+  },
   moduleNameMapper: {
     '@app/(.*)': '<rootDir>/src/app/$1',
     '@assets/(.*)': '<rootDir>/src/assets/$1',
