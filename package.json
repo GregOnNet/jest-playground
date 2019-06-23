@@ -5,11 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest",
+    "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "format": "prettier --write \"**/*.{js,json,css,scss,md,ts,html}\"",
-    "test:watch": "jest --watch"
+    "test:watch": "ng test --watch"
   },
   "private": true,
   "dependencies": {
