@@ -35,3 +35,7 @@ ng test --watch
 ```bash
 ng start
 ```
+
+## Credits
+
+This repository is maintained with ❤️ by [co-IT.eu](https://co-it.eu).
