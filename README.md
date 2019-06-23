@@ -1,6 +1,8 @@
 # Jest Playground
 
-![jest](./src/assets/jest.svg)
+<div style="text-align:center;">
+ <img src="./src/assets/jest.svg" alt="jest logo" width="200">
+</div>
 
 ## Prerequisites
 
