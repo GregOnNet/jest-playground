@@ -1,3 +1,5 @@
+import { of } from 'rxjs';
+
 describe('jest.fn', () => {
   describe('When you need to emulate a dependency', () => {
     it('you should use fn', () => {
@@ -28,14 +30,12 @@ describe('jest.fn', () => {
     it('you should give mockImplmentation a try', () => {
       const getMock = jest
         .fn()
-        .mockImplementation((apiUrl: string) =>
-          Promise.resolve(`${apiUrl}: success`)
-        );
+        .mockImplementation((apiUrl: string) => of(`${apiUrl}: success`));
 
       const url = 'http://localhost:4200';
       const http = { get: getMock };
 
-      return http.get(url).then((response: string) => {
+      http.get(url).subscribe((response: string) => {
         expect(response).toBe(`${url}: success`);
       });
     });
