@@ -15,6 +15,7 @@ describe('<app-root>', () => {
   });
 
   describe('When the application starts', () => {
+    it.todo('will be implemented later');
     it('renders the whole component', () => {
       // ComponentFixture is serialized by jest-preset-angular
       expect(sut).toMatchSnapshot();
